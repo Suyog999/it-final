@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Suyog Sitaula">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="black">
+    <div class="container">
+        <header>
+        <nav>
+        <label class="logo">IdEa</label>
+        <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="ideas.html">ideas</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        </ul>
+        </nav>
+
+        </header>
+        
+        <main>
+            <div class="register">
+				<div id="register">
+                <table>
+				  <h1>contact form</h1><br>
+				  <form method="post" id="register">
+
+                            <label>first name:<br></label>
+                            <input name="fname" type="text" id="fname" placeholder="Enter your first name" required><br>
+                            <br>
+                            <label>last name:<br></label>
+                            <input name="lname" type="text" id="lname" placeholder="Enter your last name" required><br><br>
+                            <label>Phn number:<br></label>
+                            <input name="number" type="number" id="number" placeholder="enter your phn number" required><br><br>
+                            <label>E-mail:</label><br>
+                            <input name="email" type="email" id="email" placeholder="Enter your e-mail" required><br><br>
+                            <label>Gender:</label><br>
+                            <input type="radio" name="gender" >
+                            <span>Male</span>&nbsp;&nbsp;
+                            <input type="radio" name="gender">
+                            <span>Female</span>&nbsp;&nbsp;
+                            <input type="radio" name="gender">
+                            <span>Others</span>&nbsp;&nbsp;<br><br>
+                            <button onclick="nan()">submit</button>
+					</form>
+                </table>
+				</div>
+			</div>
+        </main>
+        
+        <footer>
+            <table width="100%" border="0">
+        <tbody>
+        <tr>
+        <td align="center" style="font-size: 15px" scope="col" valign="middle">&copy;copyright All right preserved &nbsp;</td>
+        </tr>
+        <tr>
+        <td align="center" style="font-size: 15px" scope="col" valign="middle">Email : suyogsitaula48@gmail.com&nbsp;</td>
+        </tr>
+        <tr>
+        <td align="center" style="font-size: 15px" scope="col" valign="middle">contact : 9862626262&nbsp;</td>
+        </tr>
+        <tr>
+        <td align="center" style="font-size: 15px" scope="col" valign="middle">contact with us on</td>
+        </tr>
+        <tr>
+            <td align="center"  scope="col" valign="middle"><a href="https://www.facebook.com/profile.php?id=100007701526641" target="_blank"><img src="images/fb-icon.png" width="15" height="15" alt=""></a> <a href="https://www.instagram.com/suyogsitaula/" target="_blank"><img src="images/insta.png" width="15" height="15" alt=""></a></td>
+        </tr>
+        </tbody>
+        </table>
+
+        </footer>
+    </div>
+    <script>
+        function nan()
+        {
+         if(isNaN(document.getElementById("number").value))
+         {
+             alert("please enter number");
+         }
+         else if ((document.getElementById("number").value).toString().length<6){
+            alert("please enter correct length");
+         }
+        }
+       
+     </script>
+</body>
+</html>
